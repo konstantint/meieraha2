@@ -1,0 +1,30 @@
+@import "compass/css3/border-radius";
+
+
+input {
+    width: 80%;
+}
+
+textarea#data {
+    width: 80%;
+    height: 500px;
+    font-family: Courier New;
+}
+
+
+.input-errors {
+    width: 70%;
+    margin-top: 5px;
+
+    li {
+        display: block;
+        padding: 10px;
+        background-color: pink;
+
+        @include border-radius(5px);
+    }
+}
+
+.control-group.error .CodeMirror {
+    background-color: #fee;
+}

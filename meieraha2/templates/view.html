@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="layout-page-middle" class="{{lang}}">
+        <div id="AppContainer" onselectstart="return false;">
+            <svg style="display: none;">
+                <filter id="dropshadow" height="160%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="1"></feGaussianBlur>
+                        <feOffset dx="0" dy="1" result="offsetblur"></feOffset>
+                        <feMerge>
+                                <feMergeNode></feMergeNode>
+                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                </filter>
+            </svg>
+            <svg id="LeftPane" width="500" height="550"></svg>
+            <svg id="RightPane" width="500" height="550"></svg>
+            <div id="BalanceDisplay" zindex="1000">
+                <div id="BalanceValue"></div>
+                <div id="BalanceImage" class=""></div>
+            </div>
+            <div id="ComparisonPaneContainer">
+                <div class="root">
+                    <svg id="ComparisonPane" width="600" height="200">
+                    </svg>
+                </div>
+                <div id="ComparisonPaneCloseBtn">
+                    <a class="close">&times;</a>
+                </div>
+            </div>
+            <div id="Toolbar">
+                <div id="ComparisonPaneOpenBtn" class="toolbar-button">
+                    <div class="icon icon-compare"></div>
+                    <p>{{_('Compare')}}</p>
+                </div>
+                {% if 'revisions' in vis.metadata %}
+                <div id="RevisionBtn" class="toolbar-button">
+                    <div class="icon icon-revision"></div>
+                    <p>{{_('Revisions')}}</p>
+                </div>
+                {% endif %}
+                <div id="DiscussionOpenBtn" class="toolbar-button">
+                    <div class="icon icon-discuss"></div>
+                    <p>{{_('Discuss')}}</p>
+                </div>
+                <div id="ShareBtn" class="toolbar-button"
+                     data-toggle="popover" title="{{_('Share this view')}}"
+                     data-content="<a id='btnSaveView' href='#'>{{_('Generate link')}}</a>"
+                     data-html="true"
+                     data-placement="top">
+                    <div class="icon icon-share"></div>
+                    <p>{{_('Share')}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="RevisionList">
+        <h1>{{_('Revisions')}}:</h1>
+        {% for s in vis.metadata.get('revisions', []) %}
+        <p><a href="#" data-id="{{loop.index0}}" class="revision-select {{'active' if loop.last else ''}}">{{s}}</a></p>
+        {% endfor %}
+    </div>
+    <div id="DisqusContainer">
+        <a class="close">&times;</a>
+        <h1>Title something</h1>
+        <div id="disqus_thread"></div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function saveVisualization() {
+            var s = mrv.saveState();
+            s.type = 'state';
+            s.comparisonVisible = $("#comparisonPanel").hasClass('open');
+            $.post('{{url_for('main.save_visualization', id=vis.id)}}', JSON.stringify(s))
+                .fail(function() { alert("Error!"); })
+                .done(function(data) {
+                    window.location.href = "{{url_for('main.view', id=vis.id)}}?s=" + data.id;
+                 });
+        }
+
+        $(document).ready(function(){
+            $('.parent').click(function() {
+                $(this).next('.submenu').show(100);
+                $(this).addClass('open');
+
+                // hide on every other click
+                $('body').click(function(event){
+                    var $target = $(event.target);
+                    if(!$target.parents().is('#navigation li') && !$target.is('#navigation li')){
+                        $('body').find('#navigation li ul').hide(100);
+                        $('body').find('#navigation .open').removeClass('open');
+                    }
+                });
+            });
+
+            $("#ComparisonPaneCloseBtn").click(function() {
+                $("#ComparisonPaneContainer").hide(300);
+            });
+
+            $("#ComparisonPaneOpenBtn").click(function() {
+                $("#ComparisonPaneContainer").show(300);
+            });
+
+            $("#RevisionBtn").click(function() {
+                var divToShow = $("#RevisionList");
+                var showOver = $("#RevisionBtn");
+                divToShow.css({
+                    left: showOver.offset().left + "px",
+                    top: (showOver.offset().top - divToShow.height() - 15) + "px"
+                });
+                divToShow.toggle(300);
+            });
+
+            var mrv = new MeieRahaVisualization("#LeftPane", "#RightPane", "#ComparisonPane", "#BalanceValue", "#BalanceImage");
+            mrv.setLang("{{lang}}");
+            mrv.loadUrl("{{url_for('main.visualization', id=vis.id)}}?s={{request.args.get('s', '')}}", function(data) {
+                window.data = data; // XXX: For debugging purposes
+                if (data.type == 'state') {
+                    // Set current revision
+                    $(".revision-select").removeClass("active");
+                    $($(".revision-select")[data.left.dataMapper.revision]).addClass("active");
+                }
+            });
+            window.mrv = mrv;
+
+            $(".revision-select").click(function() {
+                var rev = parseInt($(this).data("id"));
+                $(".revision-select").removeClass("active");
+                $(this).addClass("active");
+                mrv.setRevision(rev);
+            });
+
+
+            $("#DisqusContainer a.close").click(function() {
+                $("#DisqusContainer").hide(100);
+            });
+
+            $("#DiscussionOpenBtn").click(function() {
+                var d = $("#DisqusContainer");
+                if (d.css("display") == "block") return;
+                $("#DisqusContainer h1").html('{{vis.title.replace("'","").replace("\n", "")}}');
+
+                DisqusUtil.disqus_shortname = '{{config['DISQUS_SHORTNAME']}}';
+                DisqusUtil.open_disqus('{{'%s%d' % (config['DISQUS_URL_ROOT'], vis.id)}}', '{{vis.metadata['title'].replace("'","").replace("\n"," ")}}');
+                d.show(100);
+            });
+
+            $("#ShareBtn").popover();
+            $("#ShareBtn").click(function() {
+                $(this).popover().show();
+                $("#btnSaveView").click(function() {
+                    $("#ShareBtn").popover('hide');
+                    saveVisualization();
+                });
+            });
+        });
+    </script>
+{% endblock %}

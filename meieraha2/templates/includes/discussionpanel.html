@@ -1,0 +1,26 @@
+<div class="discussionpanel" id="discussionPanel">
+    <div id="closeDiscussionPanel" class="close"><i class="icon icon-close"></i></div>
+
+    {% include "includes/discussionlist.html" %}
+
+    <div class="bubbleinfo" id="bubbleInfo">
+        <p class="small" id="breadCrum"><span class="link">Item 1</span> > <span class="link">Subitem 1</span> > </p>
+        <h3 id="bubbleTitle">(Untitled)</h3>
+        <p id="bubbleDescription"></p>
+        <div class="budgetchange clearfix">
+            <div class="initial">
+                <p class="small">{{_('Planned')}}</p>
+                <p class="large value">?</p>
+            </div>
+            <div class="current">
+                <p class="small">{{_('Adjusted')}}</p>
+                <p class="large value">?</p>
+            </div>
+            <div class="filled">
+                <p class="small">{{_('Filled')}}</p>
+                <p class="large value">?</p>
+            </div>
+        </div>
+        <div id="disqus_thread" class="disqusPanel"></div>
+    </div>
+</div>

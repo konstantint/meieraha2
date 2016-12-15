@@ -1,0 +1,24 @@
+{% extends 'admin/model/create.html' %}
+
+{% block head %}
+    {{ super() }}
+
+    {% assets "scss_admin" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+    {% assets "js_tinymce" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    <script type="text/javascript">
+        // Enable TinyMCE if the parameter's name starts with "INFO"
+        if ($("#name").val().substr(0, 4) == "INFO")
+            tinymce.init({selector:'textarea',
+                          plugins: ['code'],
+                          height: 400});
+    </script>
+{% endblock %}

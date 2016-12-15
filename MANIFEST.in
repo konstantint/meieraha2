@@ -1,0 +1,16 @@
+include CHANGELOG.txt LICENSE.txt README.rst setup.cfg requirements.txt
+
+recursive-include meieraha2/templates *.html
+recursive-include meieraha2/translations *
+recursive-include meieraha2/static *
+recursive-include meieraha2/data *
+
+prune meieraha2/static/.webassets-cache
+prune meieraha2/static/libs
+prune meieraha2/static/sass
+prune meieraha2/static/js
+prune meieraha2/static/css
+
+recursive-include meieraha2/static/libs/tinymce *
+
+exclude .bowerrc babel.cfg bower.json sample_pasteconfig.ini sample_settings.py

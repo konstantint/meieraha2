@@ -1,0 +1,36 @@
+{% import "includes/form.html" as macros %}
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Login page</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% assets "css_main" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+</head>
+<body>
+    <style type="text/css">
+        .login-box {
+            margin: 100px auto;
+            width: 350px;
+        }
+        .login-box h1 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .login-box button {
+            margin-top: 10px;
+        }
+        .login-box input {
+            text-align: left;
+        }
+    </style>
+    <div class="login-box">
+        <h1>Please, authenticate:</h1>
+        {{ macros.render_form(form) }}
+    </div>
+</body>
+</html>

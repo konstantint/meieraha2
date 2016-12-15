@@ -1,0 +1,22 @@
+<ul class="links">
+    {% if config['LANGS'].__len__() > 1 %}
+    <li>
+        <div id="toggleLanguageSelector" class="togglelanguageselector"><i class="icon icon-language"></i> <span>{{lang_name}} <i class="icon icon-down"></i></span></div>
+        <ul class="languageselector" id="languageSelector">
+            {% for lc, ln in config['LANGS'] %}
+            <li data-lang="{{lc}}">{{ln}}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endif %}
+    <li id="openInfoPanel"><i class="icon icon-info"></i><span>{{config['INFOPANEL_BUTTON_TEXT']}}</span></li>
+    <li id="openDiscussionPanel"><i class="icon icon-discuss"></i><span> {{_('Discussions')}}</span><span class="number" id="discussionCount">{{discussion_count}}</span></li>
+    <li id="openShareDialogue"><i class="icon icon-share"></i><span> {{_('Share')}}</span></li>
+</ul>
+
+<div class="zoomcontrol">
+    <span class="zoombutton" id="zoomIn"><i class="icon icon-zoomin"></i></span>
+    <span class="zoombutton" id="zoomOut"><i class="icon icon-zoomout"></i></span>
+</div>
+
+<div class="revisionslider">{{config['REVISION_SLIDER_TEXT']}}<div id="revisionSlider"></div></div>

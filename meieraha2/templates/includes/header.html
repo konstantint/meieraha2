@@ -1,0 +1,18 @@
+<header>
+    <h1><i class="icon icon-logo"></i><span>{{_('Our Money')}}</span></h1>
+    <nav>
+        <div>
+            <span id="toggleBudgetSelector" class="togglebudgetselector">{{vis.title}} <i class="icon icon-down"></i></span>
+            <ul class="budgetselector" id="budgetSelector">
+                {% for id, title, meta in visualizations %}
+                <li data-url="{{url_for('main.view', id=id)}}">{{title}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% if config['SKIN'] == 'estonia' %}
+        <div>
+            <a href="http://kalkulaator.meieraha.ee">{{_('Tax Calculator')}}</a>
+        </div>
+        {% endif %}
+    </nav>
+</header>

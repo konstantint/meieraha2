@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{_('Our Money')}}</title>
+		<meta name="description" content="Meieraha2 v{{version}}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {# NB: it is important to put the Skin CSS before the main one, otherwise some things don't show as intended #}
+        {% assets "css_skin_%s" % config['SKIN'] %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+
+        {% assets "css_main" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+
+        {% set apple_icon_sizes = ['57x57', '60x60', '72x72', '76x76', '114x114', '120x120', '144x144', '152x152', '180x180'] %}
+        {% for size in apple_icon_sizes %}
+		<link rel="apple-touch-icon" sizes="{{size}}" href="{{url_for('static', filename='img/icons/%s/apple-touch-icon-%s.png' % (config['SKIN'], size))}}">
+        {% endfor %}
+
+        {% set favicon_sizes = ['16x16', '32x32', '96x96', '194x194'] %}
+        {% for size in favicon_sizes %}
+		<link rel="icon" type="image/png" sizes="{{size}}" href="{{url_for('static', filename='img/icons/%s/favicon-%s.png' % (config['SKIN'], size))}}">
+        {% endfor %}
+
+		<link rel="icon" type="image/png" sizes="192x192" href="{{url_for('static', filename='img/icons/%s/android-chrome-192x192.png' % config['SKIN'])}}">
+		<link rel="manifest" href="{{url_for('static', filename='img/icons/manifest.json')}}">
+
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="{{url_for('static', filename='img/icons/%s/mstile-144x144.png' % config['SKIN'])}}">
+		<meta name="theme-color" content="#ffffff">
+
+		<!--[if lt IE 9]>
+            {% assets "js_html5shiv" %}
+                <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+            {% endassets %}
+		<![endif]-->
+
+        {% assets "js_head" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+
+        {{ config['EXTRA_HTML_HEAD']|safe }}
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+        {% include "includes/stage.html" %}
+        {% include "includes/tooltip.html" %}
+
+		<div class="interactions">
+            {% include "includes/header.html" %}
+            {% include "includes/controls.html" %}
+            {% include "includes/sharedialogue.html" %}
+            {% include "includes/discussionpanel.html" %}
+            {% include "includes/infopanel.html" %}
+            {% include "includes/comparisonpanel.html" %}
+		</div>
+
+        {% assets "js_main" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+
+		<script>
+            $( document ).ready(function() {
+                BackendConnector.configure("{{config['BASE_URL']}}");
+
+                var p = new Page("{{config['BASE_URL']}}",
+                                 "{{config['DISQUS_SHORTNAME']}}",
+                                 "{{config['SHARE_MESSAGE']}}");
+                p.setLang("{{lang}}");
+                p.loadVisualization({{vis.id}}, "{{request.args.get('s', '')}}");
+                window.p = p; {# For debugging purposes #}
+
+                {# This is a kind-of-a-hack to allow accordion logic on an info panel without the need to allow scripts there #}
+                //
+            });
+		</script>
+        {% include "includes/googleanalytics.html" %}
+
+        {{ config['EXTRA_HTML_BODY']|safe }}
+	</body>
+</html>

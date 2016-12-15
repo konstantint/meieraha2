@@ -1,0 +1,28 @@
+Version 2.2
+-----------
+
+    - Localization of "K", "M" and "B" suffixes in amounts.
+    - Different number formatting.
+    - Changed some translations.
+    - App version is reported in a <meta> tag on the web page.
+    - Added EXTRA_HTML_HEAD and EXTRA_HTML_BODY config parameters.
+    - Changed armenian background image
+    - Fixed bug: when the page is opened the initial revision shown must be the same as the one on the slider.
+    - Added "multiyear" mode for visualizations (when revisions correspond to different years rather than revisions within one year)
+    - Added "show_info_panel" parameter in visualization metadata
+    - Added INFOPANEL_BUTTON_TEXT and REVISION_SLIDER_TEXT config parameters
+    - Added SKIN config parameter, split icons into "estonia" and "gyumri" for different skins.
+    - Updated some design elements
+
+Version 2.1
+-----------
+
+    - Armenian language localization.
+    - TinyMCE added for editing the INFO config parameters in admin app.
+    - Creation and deletion of users prohibited, password hash not shown.
+    - Other minor functionality, visual and bug fixes.
+
+Version 2.0
+-----------
+
+    - Initial version. It's "Meieraha2" hence we start versioning from 2.0.

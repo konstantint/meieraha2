@@ -1,0 +1,29 @@
+{% extends 'admin/model/create.html' %}
+
+{% block head %}
+    {{ super() }}
+
+    {% assets "scss_admin" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+
+    {% assets "css_codemirror" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+    {% assets "js_codemirror" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    <script type="text/javascript">
+        var dataEditor = CodeMirror.fromTextArea(document.getElementById("data"),
+                        {mode: 'javascript', lineNumbers: true});
+        dataEditor.setSize(650, 600);
+        var metaDataEditor = CodeMirror.fromTextArea(document.getElementById("meta_data"),
+                        {mode: 'javascript', lineNumbers: true});
+        metaDataEditor.setSize(650, 100);
+    </script>
+{% endblock %}

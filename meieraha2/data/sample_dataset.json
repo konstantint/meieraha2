@@ -1,0 +1,111 @@
+{
+    "meta": {
+        "title": "Sample visualization",
+        "title_et": "Näite visualiseering",
+        "revisions": [{
+            "id": "Q0",
+            "label": "Initial",
+            "label_et": "Esialgne"
+          },
+          {
+            "id": "Q1",
+            "label": "First quarter revision",
+            "label_et": "Esimese kvartali revisjon"
+          },
+          {
+            "id": "Q2",
+            "label": "Second quarter revision (planned)",
+            "label_et": "Teise kvartali revisjon (planeeritud)"
+          }
+        ]
+    },
+    "id": 1,
+	"label": "Sample dataset",
+    "description": "This is a long description of this dataset",
+    "description_et": {
+      "Q0": "See on andmestiku pikk kirjeldus",
+      "Q1": "Iga revisjoni jaoks võib määrata eraldi kirjelduse"
+    },
+    "url": "http://google.com",
+	"children": [
+	    {
+            "id": 2,
+	        "label": "First bubble",
+	        "label_et": "Esimene mull",
+            "url": "http://kt.era.ee/",
+	        "amount": {
+              "Q0": 10000,
+              "Q1": 6000
+            },
+	        "plannedFillAmount": {
+              "Q0": 0,
+              "Q1": 3000,
+              "Q2": 5000
+            },
+            "actualFillAmount": {
+              "Q0": 0,
+              "Q1": 3500
+            },
+	        "color": {
+              "Q1": "red"
+            }
+	    },
+	    {
+            "id": 3,
+	        "label": "Second bubble",
+	        "label_et": "Teine mull",
+	        "amount": [80000, 120000, 200000]
+	    },
+	    {
+            "id": 4,
+	        "label": "Third bubble",
+	        "label_et": "Kolmas mull",
+            "children": [
+                {
+                    "id": 5,
+                    "label": "First bubble",
+                    "label_et": "Esimene mull",
+                    "amount": [1000, 6000, 7000],
+                    "plannedFillAmount": [1000, 2000, 6500],
+                    "color": ["red", "green", "blue"]
+
+                },
+                {
+                    "id": 6,
+                    "label": "Second bubble",
+                    "label_et": "Teine mull",
+                    "amount": [8000, 12000, 20000]
+                },
+                {
+                    "id": 7,
+                    "label": "Third bubble",
+                    "label_et": "Kolmas mull",
+                    "children": [
+                        {
+                            "id": 8,
+                            "label": "First bubble",
+                            "label_et": "Esimene mull",
+                            "amount": [100, 600, 700],
+                            "actualFillAmount": [100, 200, 650],
+                            "color": ["red", "green", "blue"]
+
+                        },
+                        {
+                            "id": 9,
+                            "label": "Second bubble",
+                            "label_et": "Teine mull",
+                            "amount": [800, 1200, 2000]
+                        },
+                        {
+                            "id": 10,
+                            "label": "Third bubble",
+                            "label_et": "Kolmas mull",
+                            "amount": [100, 200, 300],
+                            "actualFillAmount": [90, 100]
+                        }
+                    ]
+                }
+            ]
+	    }
+    ]
+}

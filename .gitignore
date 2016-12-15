@@ -1,0 +1,15 @@
+/build
+/dist
+/.tmp
+/.idea
+/.eggs
+/*.egg
+/*.egg-info
+/**/.webassets-cache/
+/**/__pycache__/
+/db.sqlite
+/sample_pasteconfig.ini
+/sample_settings.py
+*.pyc
+Thumbs.db
+/_backups

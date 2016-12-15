@@ -1,0 +1,11 @@
+<div id="stage" class="stage">
+    <svg id="budgetStage" class="budgetpane" viewbox="0 0 1000 625">
+        <g class="zoomcontainer">
+            <image width="1000" height="625" xlink:href="{{url_for('static', filename='img/background-%s.png' % (lang if lang in ['en', 'hy', 'et'] else 'en'))}}"></image>
+            <g id="leftPane" data-width="460" data-height="575" transform="translate(20, 50)">
+            </g>
+            <g id="rightPane" data-width="460" data-height="575" transform="translate(520, 50)">
+            </g>
+        </g>
+    </svg>
+</div>

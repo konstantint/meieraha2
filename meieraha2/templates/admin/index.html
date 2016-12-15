@@ -1,0 +1,117 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+    <h3>Site Administration</h3>
+    <p>
+        The pages here let you directly edit the database of the site. The editing interface is somewhat low-level, so before you
+        use it you should probably know more about the internals of the site.
+    </p>
+    <p>
+        The MeieRaha database consists of four tables, which you might or might not need to edit:
+        <a href="/admin/configparameterview">Settings</a>, <a href="/admin/userview">Users</a>,
+            <a href="/admin/datasetview">Datasets</a> and <a href="/admin/meierahavisualizationview">Visualizations</a>.
+    </p>
+    <hr>
+    <h4>Settings</h4>
+    <p>The <b>Settings</b> table currently contains some global parameters used in the application:
+        <ul>
+            <li>The <code>DEFAULT_VISUALIZATION_ID</code> parameter determines what visualization is shown when the user enters the main page of the website. You may edit the value of this parameter
+        to any integer, which is a valid <i>id</i> of one of the <b>Visualization</b> entries.
+            </li>
+            <li>The <code>INFO</code> and <code>INFO_&lt;lang&gt;</code> parameters contain HTML code that is displayed in the "Info" box of the site.</li>
+        </ul>
+    </p>
+    <hr>
+    <h4>Users</h4>
+    <p>The <b>Users</b> table is what you expect it to be - a list of users. The user credentials are only checked when this
+        administration interface is accessed, and no matter what username you log in under, you will have full access. Hence, although
+        you may in principle add users, a single <code>admin</code> user should suffice. You may want use the interface to edit the password, though.
+    </p>
+    <p>
+        Note that the password is stored in the database in encrypted form. However, when you edit the record, you should enter it <i>in plaintext</i>,
+        and it will be automatically encrypted as necessary.
+    </p>
+    <hr>
+    <h4>Datasets</h4>
+    <p>The entries of the <b>Datasets</b> table represent separate panels in the MeieRaha visualization. A single visualization references three <b>Datasets</b>:
+        the left panel, the right panel and the "comparison bubbles".
+    </p>
+    <p>
+        The <b>Dataset</b> record contains two fields: <code>title</code> and <code>data</code>. The first one is just a descriptive string,
+        that is useful to identify the meaning of the dataset in the table of the admin interface (it is not displayed anywhere else).
+        The second stores the content of a dataset is stored as a JSON record. The record <i>must</i> contain the fields:
+    </p>
+    <ul>
+        <li><code>id</code>: integer ID of the bubble. All ids of the bubbles must be different</li>
+        <li><code>label</code>: textual label of the corresponding bubble. Make it reasonably short.
+            If you need a longer explanation, provide it in the <code>description</code> field (see below).</li>
+        <li><code>amount</code>: monetary amount, which also determines the size of the bubble</li>
+    </ul>
+    <p>
+        The record may in addition, optionally contain the fields:
+    </p>
+    <ul>
+        <li><code>label_&lt;lang&gt;</code>: localized value of the label for a given language.</li>
+        <li><code>description</code> and <code>description_&lt;lang&gt;</code>: a longer description (possibly localized) for the given bubble. It is shown on
+        the tooltip that appears when mouse is hovered over a bubble.</li>
+        <li><code>color</code>: a valid HTML color string. Forces the corresponding bubble to have that color.</li>
+        <li><code>actualFillAmount</code>: a positive number, which depicts how much of a bubble is "filled".</li>
+        <li><code>plannedFillAmount</code>: a positive number, which depicts how much of a bubble is "planned to be filled".
+            This value makes most sense in the context of "revisions" (see below). Whenever for some revision the <code>actualFillAmount</code> is not specified,
+            the corresponding <code>plannedFillAmount</code> is looked up instead.</li>
+        <li><code>children</code>: a list of child records, each itself a valid record.</li>
+    </ul>
+    <h5>Revisions</h5>
+    <p>
+        A dataset may contain several "revisions".
+        If it is the case, all the fields of the record except <code>children</code>
+        <i>may</i> contain instead of a single value a list of values or an object of values. For example, suppose that the visualization
+        has revisions <code>"R1"</code>, <code>"R2"</code>, and <code>"R3"</code>. In this case, the following are valid examples of an <code>amount</code> field:
+        <ul>
+            <li><code>amount: 1000</code>, indicates the amount is 1000 for all three revisions</li>
+            <li><code>amount: [100, 200, 300]</code>, indicates the amount has value 100 for revision <code>R1</code>, 200 for revision <code>R2</code> and 300 for revision <code>R3</code></li>
+            <li><code>amount: {"R1":100, "R2":200, "R3": 300}</code>, is equivalent in meaning to the above notation,</li>
+            <li><code>amount: [100, 200]</code> is equivalent to <code>amount: [100, 200, 200]</code> and <code>amount: {"R1":100, "R2":200}</code>,</li>
+            <li><code>amount: {"R1":100, "R3":300}</code> is equivalent to <code>amount: [100, 100, 300]</code>,</li>
+            <li><code>amount: {"R2":100}</code> is equivalent to <code>amount: [0, 100, 100]</code>.</li>
+        </ul>
+    </p>
+    <p>
+        Special logic is used to interpret revisioned values of the <code>actualFillAmount</code> and <code>plannedFillAmount</code>.
+        As noted above, <code>actualFillAmount</code> is used to determine the displayed "filling" of the bubble, however if for some revision it is
+        not specified, value of <code>plannedFillAmount</code> will be used if available.
+    </p>
+    <p>
+        You can also use revisions for <code>label</code> and <code>color</code> fields, however note that if you specify
+        <code>label: {"R2": "Something"}</code>, the system will not be able to guess a reasonable value for the label at revision <code>R1</code>.
+    </p>
+    <p>
+         The list of revisions of a multi-revision visualization must be specified within the <code>meta</code> field of the <b>Visualization</b> object (see below).
+    </p>
+    <p>The <b>Dataset</b> database entry also has a <code>title</code> field, which is only used to identify the meaning of the dataset in the database for convenience.</p>
+    <hr>
+    <h4>Visualization</h4>
+    <p>The entries in <b>Visualization</b> correspond to actual visualizations, available on the site. Each entry is specified by providing
+        references to three <b>Dataset</b> entries (the left, the right and the comparison panels) a <code>title</code> (to help identify
+        the record in the admin interface for the DB administrator) and a <code>meta_data</code> JSON record.
+    </p>
+    <p>
+        The <code>meta_data</code> record must have the field <code>title</code> which will be shown on the website to identify the visualization.
+        In addition, the following optional fields are supported:
+    </p>
+    <ul>
+        <li><code>title_&lt;lang&gt;</code>: localised title.</li>
+        <li><code>hide</code>: when this is "true", the resulting dataset is not shown in the list of available datasets on the main page.</li>
+        <li><code>multiyear</code>: when this is "true", the revisions are assumed to correspond to different years rather than modifications of the same budget for one year.
+            The difference is in how the tooltip is displayed (for a single year budget revisions you will see things like "initial/planned" and "current/adjusted" values).</li>
+        <li><code>show_info_panel</code>: when this is "true", an info panel is displayed automatically whenever the visualization is opened (the Armenia guys wanted this behaviour).</li>
+        <li><code>revisions</code>: a list of objects, describing revisions. Each object must contain fields <code>id</code>, <code>label</code> and, possibly,
+            <code>label_&lt;lang&gt;</code>. If such field is available, both left and right datasets are assumed to have multiple versions,
+                corresponding to those revisions (see above). The visualization will allow switching between the versions.</li>
+    </ul>
+    <hr>
+    <p>
+        <a href="{{url_for('main.index')}}" style="display: block; float: left">Back to the site</a>
+        <a href="{{url_for('auth.logout')}}" style="display: block; float: right">Logout</a>
+    </p>
+{% endblock %}

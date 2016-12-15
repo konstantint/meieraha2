@@ -1,0 +1,542 @@
+0	0	0	0	KAALUD				
+10	1	0	620000000	Riigitöötajad	Civil servants	<img src="/static/img/comparisons/opetaja.jpg"><br>Kõikide riigitöötajate aastane palgakulu	<img src="/static/img/comparisons/opetaja.jpg"><br>Yearly salary of all civil servants	
+10	2	0	200000000	Tallinn-Mäo	Tallinn-Mäo	<img src="/static/img/comparisons/maantee.jpg"><br>Tallinn-Mäo teelõigu 4-realiseks ehitamine	<img src="/static/img/comparisons/maantee.jpg"><br>Tallinn-Mäo highway extension to 4 lines	
+10	3	0	142000000	Vangla	Penitentiary	<img src="/static/img/comparisons/vangla.jpg"><br>Tallinna Vangla aasta ülalpidamine	<img src="/static/img/comparisons/vangla.jpg"><br>Tallinna Penitentiary yearly cost	
+10	4	0	73000000	10 Lennukit	10 Airplanes	<img src="/static/img/comparisons/lennukid.jpg"><br>10 uut lennukit Estonian Airile	<img src="/static/img/comparisons/lennukid.jpg"><br>10 new aircraft for Estonian Air	
+10	5	0	8000000	Monument	Monument	<img src="/static/img/comparisons/sammas.jpg"><br>Vabaduse Monument	<img src="/static/img/comparisons/sammas.jpg"><br>Estonian Liberty Statue	
+10	6	0	1994860000	FSFS garantii	EFSF guarantee package	<img src="/static/img/comparisons/kreekaeuro.jpg"><br>Eesti garanteerib EFSF-i võlakirju 2 miljardi euro ulatuses.	<img src="/static/img/comparisons/kreekaeuro.jpg"><br>Estonia guarantees nearly 2 billion euros in the EFSF emergency fund.	
+0	0	0	0	TULUD 2011				
+1	49	0	1300000000	Käibemaks	Value added tax	"Iga kord, kui sa ostad mingit kaupa või teenust, lisab kauba müüja selle hinnale 20%, mis tasutakse järgmise kuu 20. kuupäevaks Maksu- ja Tolliametile ning kantakse sealt riigieelarve tuludesse."		"102,102,204"
+1	50	0	444200000	Tulumaks	Income tax	"Seda maksu tasub juriidiline isik või füüsilisest isikust tööandja, kui ta teeb tuluülekande füüsilisele isikule."		"51,51,204"
+1	51	0	1809762382	Sotsiaalmaksud	Social tax	Siia alla kuulub sotsiaalmaks ja töötuskindlustusmaks.		"153,51,255"
+1	52	0	716831956	Tootemaksud	Tootemaksud	"Need on maksud, mida rakendatakse mingile konkreetsele kaubagrupile. Tollimaksu tasutakse vaid Euroopa Liidu välisest riigist toodud kaupade eest ja see kantakse üle EL eelarvesse. Aktsiisi tasutakse kaubalt, sõltumata sellest, kas ta on toodud välisriigist või toodetud kohapeal ning see kantakse riigieelarvesse."		"153,0,204"
+1	53	0	3600000	Omandimaksud	Property taxes	Raskeveokimaks.		"0,153,204"
+1	54	0	1464100000	Mittemaksutulud	Mittemaksutulud	"Siin kajastatakse muid, mitte maksudest riigile laekuvaid tulusid."		"51,204,255"
+1	55	0	176505662	Laenud	Debt			"255,51,0"
+1	56	50	215400000	Füüsilise isiku tulumaks	Personal income tax	"Sinu töötasust arvestatakse maha 144€ maksuvaba tulu ning järelejäänud summalt peab sinu tööandja kinni 21% tulumaksu, mis kantakse Maksu- ja Tolliameti kaudu riigieelarvesse. 11,4% kantakse üle sinu elukoha linnale või vallale, ülejäänu läheb riigieelarvesse."		
+1	57	50	228800000	Juriidilise isiku tulumaks	Corporate income tax	"Kui äriühing maksab oma kasumi välja füüsilisele isikule, peab ta tasuma sellelt 21% tulumaksu, kuid enne seda peab ta jagama väljamakstava summa 0,79-ga. See summa läheb riigieelarvesse."		
+1	58	51	1750500000	Sotsiaalmaks	Social tax	"Sinule arvestatud töötasule lisaks maksab tööandja 33%, millest rahastatakse pensione ja tervishoidu. 20% sellest läheb pensionikindlustuseks, mis makstakse põlvkondade vahelise solidaarsuse põhimõttel välja sinu esivanematele, kes on jõudnud pensioniikka. 13% kaetakse makstakse arstidel palgad, kompenseeritakse töötasu haigetele ja tasutakse osa kallite ja vajalike ravimite hinnast."		
+1	59	51	59262382	Töötuskindlustus	Unemployment insurance	"Sinu palgast peetakse kinni 2,4%, lisaks maksab tööandja 1,4%. Nendest vahenditest makstakse töötasu kompensatsiooni inimestele, kes on jäänud tööta ja jäänud sissetulekuta."		
+1	60	52	170000000	Alkoholiaktsiis	Alcohol excise duty	"Seda maksu tasutakse vedelikult, mis sisaldab alkoholi (piiritus, viin jms kange alkohol, vein, õlu, siider jms) ning maksuna tasutav summa sõltub sellest, kui palju selles on alkoholi."		
+1	61	52	138900000	Tubakaaktsiis	Excise duty on tobacco	"Seda maksu tasutakse tubakatoodete (sigaret, sigar, sigarillo, suitsetamis- ja närimistubakas) ostmisel. Sigareti pakendile on kirjutatud selle maksimaalne müügihind."		
+1	62	52	364900000	Kütuseaktsiis	Fuel excise duty	"Seda maksu tasutakse igasuguse kütuse ostmisel (bensiin, petrooleum, diiselkütus, kütteõlid ja vedelgaas, kivi- ja pruunsüsi, koks, põlevkivi, maagaas jms põlevained s.h biokütus). Autokütuse liitrilt tuleb tasuda 0,39- 0,42 senti aktsiisi. "		
+1	63	52	31000000	Elektriaktsiis	Excise duty on electricity	"Seda maksu tasutakse, kui ostetakse elektrienergiat, maksumäär on 4,47€ megavatt-tunnilt elektrienergialt."		
+1	64	52	31956	Pakendiaktsiis	Excise duty on packaging	Seda maksu tuleb tasuda tarbimispakenditelt. Pakendi hind on tavaliselt märgitud kaubal.		
+1	65	52	19400000	Hasartmängumaks	Gambling tax	"Seda maksu tuleb tasuda hasartmängudeks kasutatavatelt masinatelt jm vahenditelt. Maksutulu kasutatakse Eesti kultuuri edendamiseks, mitmesuguste heategevusprojektide toetamiseks ning Olümpiamängude ettevalmistusprojektide finantseerimiseks."		
+1	66	52	23600000	Tollimaks	Customs duties			
+1	67	54	104400000	Kaupade ja teenuste müük	Sales of goods and services	"Siin kajastatakse tulud, mis laekuvad riigilõivu tasumisest, riigi majandustegevusest ning kaupade ja teenuste müügist."		
+1	68	54	1111300000	Välistoetused	Subsidies	"Selles osas kajastatakse tulusid, mis riigile laekuvad riigiasutuste tegevusest, aga samuti EL eelarvest ja muudest välisallikatest (1013,5 milj eurot) ning muud toetused."		
+1	69	54	28500000	Varade müük	Sales of material and immaterial assets	"Siin kajastatakse tulusid, mis laekuvad riigieelarvesse materiaalsete ja immateriaalsete varade müügist."		
+1	70	54	175200000	Tulud varadelt	Income on assets	"Siin kajastatakse tulusid, mis laekuvad, riigi omanduses olevate äriühingute kasumieraldistest ning varada välja rentimisest."		
+1	71	54	44700000	Muud tulud	Other income	"Selles osas kajastatakse riigieelarvesse laekuvad tulud, mis tasutakse trahvide ja saastetasudena."		
+0	0	0	0	KULUD 2011				
+2	119	0	554000000	Valitsussektori teenused	Government sector services			"51,204,52"
+2	120	119	302827111	Kohalikele omavalitsustele	For local government units			
+2	121	119	43573727	Maksu- ja tollipoliitika	Tax and customs policy			
+2	122	119	79084274	Maksed pensioni II sambasse	Contributions to state pension fund			
+2	123	119	36306767	Keskkonnainvesteeringute keskus	Environmental Fund 			
+2	124	119	85301094	Muu	Other			
+2	125	0	263000000	Riigikaitse	Defence			"0,102,51"
+2	126	125	150418963	Kaitsevägi	Defence Forces			
+2	127	125	79285192	Kaitseministeerium	Ministry of Defence			
+2	128	125	33295845	Muu	Other			
+2	129	0	318000000	Avalik kord ja julgeolek	Public order and safety 			"153,153,102"
+2	130	129	57402637	"Kriminaalpoliitika,  sh  vanglad"	"Law and order, incl prisons"			
+2	131	129	25466597	Kohtud	Court system			
+2	132	129	184500000	"Sisejulgeolek,  sh Politsei ja piirivalve"	Internal security incl Police and Rescue Services			
+2	134	129	50630766	Muu	Other			
+2	135	0	861000000	Majandus	Economic affairs			"255,0,153"
+2	136	135	96208458	Ettevõtluse soodustamine	Support for SMEs			
+2	137	135	3544671	Elamumajandus ja ehitus	Housing and community amenities 			
+2	138	135	27247463	Infoühiskond	ICT in society			
+2	139	135	67848668	Ühistransport	Public transport			
+2	140	135	321322543	Teed	Roads			
+2	141	135	311597951	Põllumajandus	Agriculture			
+2	142	135	33230246	Muu	Other			
+2	143	0	251000000	Keskkonnakaitse	Environmental protection 			"102,204,102"
+2	144	143	8000000	KOV vee- ja jäätmemajanduse investeeringud	Local government investments in water and sewage systems			
+2	145	143	25564658	Investeeringud energia tõhususse	Investments in energy saving			
+2	146	143	11658779	Looduskaitse	Nature protection			
+2	147	143	205776563	Muu	Other			
+2	148	0	4000000	Elamu ja kommunaalmajandus	Housing and community amenities 			"204,0,102"
+2	149	0	797000000	Tervishoid	Health care			"255,102,102"
+2	150	149	711221607	Haigekassa	Health insurance fund			
+2	151	149	85778393	Muu	Other			
+2	152	0	195000000	"Kultuur, sport"	Culture and sports			"204,204,0"
+2	153	152	136319183	Kultuur	Culture			
+2	154	152	14747492	Sport	Sport			
+2	155	152	43933325	Muu	Other			
+2	156	0	697000000	Haridus	Education			"153,153,51"
+2	157	156	46822899	Üldharidus	General education			
+2	158	156	111230659	Kutseharidus	Vocational education			
+2	159	156	153871275	Kõrgharidus sh riiklik koolitustellimus ülikoolidele	Higher education			
+2	160	156	138259367	Teadus- ja arendustegevus	Research and development			
+2	161	156	246815800	Muu	Other			
+2	162	0	1975000000	Sotsiaalne kaitse	Social care			"204,102,102"
+2	163	119	6907027	Riigikogu liikmete palk	Salaries for MPs			
+2	164	162	272647093	"Peretoetused, sh vanemahüvitis"	Family benefits			
+2	165	162	30000000	Toimetulekutoetused	Social benefits			
+2	166	162	49211969	Puuetega inimeste toetused	Benefits for the disabled			
+2	167	162	1286000000	Pension	Pension fund			
+2	168	162	277878556	Muu	Other			
+2	169	162	59262382	Töötukassa	Employment Fund			
+0	0	0	0	TULUD 2012				
+3	49	0	1433096027	Käibemaks	Value added tax	"Iga kord, kui sa ostad mingit kaupa või teenust, lisab kauba müüja selle hinnale 20%, mis tasutakse järgmise kuu 20. kuupäevaks Maksu- ja Tolliametile ning kantakse sealt riigieelarve tuludesse."		
+3	50	0	474090619	Tulumaks	Income tax	"Seda maksu tasub juriidiline isik või füüsilisest isikust tööandja, kui ta teeb tuluülekande füüsilisele isikule."		
+3	51	0	1923903442	Sotsiaalmaksud	Social tax	Siia alla kuulub sotsiaalmaks ja töötuskindlustusmaks.		
+3	52	0	777404000	Aktsiisid	Excise duties	"Need on maksud, mida rakendatakse mingile konkreetsele kaubagrupile. Tollimaksu tasutakse vaid Euroopa Liidu välisest riigist toodud kaupade eest ja see kantakse üle EL eelarvesse. Aktsiisi tasutakse kaubalt, sõltumata sellest, kas ta on toodud välisriigist või toodetud kohapeal ning see kantakse riigieelarvesse."		
+3	54	0	1442417899	Mittemaksutulud	Non-taxes	"Siin kajastatakse muid, mitte maksudest riigile laekuvaid tulusid."		
+3	56	50	253457722	Füüsilise isiku tulumaks	Personal income tax	"Sinu töötasust arvestatakse maha 144€ maksuvaba tulu ning järelejäänud summalt peab sinu tööandja kinni 21% tulumaksu, mis kantakse Maksu- ja Tolliameti kaudu riigieelarvesse. 11,4% kantakse üle sinu elukoha linnale või vallale, ülejäänu läheb riigieelarvesse."		
+3	57	50	220632897	Juriidilise isiku tulumaks	Corporate income tax	"Kui äriühing maksab oma kasumi välja füüsilisele isikule, peab ta tasuma sellelt 21% tulumaksu, kuid enne seda peab ta jagama väljamakstava summa 0,79-ga. See summa läheb riigieelarvesse."		
+3	58	51	1923903442	Sotsiaalmaks	Social tax	"Sinule arvestatud töötasule lisaks maksab tööandja 33%, millest rahastatakse pensione ja tervishoidu. 20% sellest läheb pensionikindlustuseks, mis makstakse põlvkondade vahelise solidaarsuse põhimõttel välja sinu esivanematele, kes on jõudnud pensioniikka. 13% kaetakse makstakse arstidel palgad, kompenseeritakse töötasu haigetele ja tasutakse osa kallite ja vajalike ravimite hinnast."		
+3	60	52	193000000	Alkoholiaktsiis	Alcohol excise duty	"Seda maksu tasutakse vedelikult, mis sisaldab alkoholi (piiritus, viin jms kange alkohol, vein, õlu, siider jms) ning maksuna tasutav summa sõltub sellest, kui palju selles on alkoholi."		
+3	61	52	169000000	Tubakaaktsiis	Excise duty on tobacco	"Seda maksu tasutakse tubakatoodete (sigaret, sigar, sigarillo, suitsetamis- ja närimistubakas) ostmisel. Sigareti pakendile on kirjutatud selle maksimaalne müügihind."		
+3	62	52	382004000	Kütuseaktsiis	Fuel excise duty	"Seda maksu tasutakse igasuguse kütuse ostmisel (bensiin, petrooleum, diiselkütus, kütteõlid ja vedelgaas, kivi- ja pruunsüsi, koks, põlevkivi, maagaas jms põlevained s.h biokütus). Autokütuse liitrilt tuleb tasuda 0,39- 0,42 senti aktsiisi. "		
+3	63	52	33300000	Elektriaktsiis	Excise duty on electricity	"Seda maksu tasutakse, kui ostetakse elektrienergiat, maksumäär on 4,47€ megavatt-tunnilt elektrienergialt."		
+3	64	52	100000	Pakendiaktsiis	Excise duty on packaging	Seda maksu tuleb tasuda tarbimispakenditelt. Pakendi hind on tavaliselt märgitud kaubal.		
+3	65	72	19800000	Hasartmängumaks	Gambling tax	"Seda maksu tuleb tasuda hasartmängudeks kasutatavatelt masinatelt jm vahenditelt. Maksutulu kasutatakse Eesti kultuuri edendamiseks, mitmesuguste heategevusprojektide toetamiseks ning Olümpiamängude ettevalmistusprojektide finantseerimiseks."		
+3	66	72	33200000	Tollimaks	Customs duties			
+3	67	54	114308709	Kaupade ja teenuste müük	Sales of goods and services	"Siin kajastatakse tulud, mis laekuvad riigilõivu tasumisest, riigi majandustegevusest ning kaupade ja teenuste müügist."		
+3	68	54	1051720929	"Toetused, sh CO2 kvootide müük"	"Subsidies, inc CO2 quotas sales"	"Selles osas kajastatakse tulusid, mis riigile laekuvad riigiasutuste tegevusest, aga samuti EL eelarvest ja muudest välisallikatest (1013,5 milj eurot) ning muud toetused."		
+3	69	54	21145811	Varade müük	Sales of material and immaterial assets	"Siin kajastatakse tulusid, mis laekuvad riigieelarvesse materiaalsete ja immateriaalsete varade müügist."		
+3	70	54	201029835	Tulud varadelt	Income on assets	"Siin kajastatakse tulusid, mis laekuvad, riigi omanduses olevate äriühingute kasumieraldistest ning varada välja rentimisest."		
+3	71	54	54212615	Muud tulud	Other income	"Selles osas kajastatakse riigieelarvesse laekuvad tulud, mis tasutakse trahvide ja saastetasudena."		
+3	72	0	56800000	Muud maksud	Other taxes			
+3	73	72	3800000	Raskeveokimaks	Heavy vehicle tax			
+0	0	0	0	KULUD 2012				
+4	119	0	622721154	Valitsussektori teenused	Government sector services			
+4	120	119	102565407	"Kohalikele omavalitsustele, sh tasandusfond"	"Local government units, inc leveling fund"			
+4	122	162	168700000	Maksed pensioni II sambasse	Contributions to state pension fund			
+4	123	143	36899303	Keskkonnainvesteeringute keskus	Environmental Fund 			
+4	124	119	216284515	"Muu, sh valitsuse reservfond"	"Other, inc government reserves"			
+4	125	0	323697525	Riigikaitse	Defence			
+4	126	125	183959984	Kaitsevägi	Defence Forces			
+4	127	125	51864731	Kaitseministeerium	Ministry of Defence			
+4	128	125	38321152	Muu	Other			
+4	129	0	376697078	Avalik kord ja julgeolek	Public order and safety 			
+4	130	129	38670748	"Kriminaalpoliitika, sh vanglad"	"Criminal policy, inc penitentiaries"			
+4	131	129	28119494	Kohtud	Court system			
+4	132	129	139018326	"Sisejulgeolek,  sh Politsei ja piirivalve"	Internal security incl Police and Rescue Services			
+4	134	129	121708867	"Muu, sh investeeringud"	"Muu, sh investeeringud"			
+4	135	0	1024043304	Majandus	Economic affairs			
+4	136	135	87342641	Ettevõtluse soodustamine	Support for SMEs			
+4	137	135	3840000	Elamumajandus ja ehitus	Housing and community amenities 			
+4	138	135	23520000	Infoühiskond	ICT in society			
+4	139	135	60283395	Ühistransport	Public transport			
+4	140	135	302792786	Teed	Roads			
+4	141	135	311296317	"Põllumajandus, maaelu ja kalandus"	Agriculture and fishing			
+4	142	135	234968165	Muu	Other			
+4	143	0	241916698	Keskkonnakaitse	Environmental protection 			
+4	144	143	156203723	"Struktuuritoetused, sh KOV veemajandus"	"Structural support, inc LGU water"			
+4	147	143	48813672	Muu	Other			
+4	148	0	3844133	Elamu ja kommunaalmajandus	Housing and community amenities 			
+4	149	0	855686376	Tervishoid	Health care			
+4	150	149	771884000	Haigekassa riikliku ravikindlustuse kulud	Health insurance expenditures			
+4	151	149	50779163	Muu	Other			
+4	152	0	195789072	"Kultuur, sport"	Culture and sports			
+4	153	152	151449097	Kultuur	Culture			
+4	154	152	12225977	Sport	Sport			
+4	155	152	32113998	"Muu, sh religiooni toetamine"	"Other, inc religion support"			
+4	156	0	761382958	Haridus	Education			
+4	157	156	248600000	"Üldharidus, sh kohalikele omavalitsustele"	"General education, inc LGU"			
+4	158	156	50915051	Kutseharidus	Vocational education			
+4	159	156	154100000	Kõrgharidus sh riiklik koolitustellimus ülikoolidele	Higher education			
+4	160	156	163000000	Teadus- ja arendustegevus	Research and development			
+4	161	156	144767907	Muu	Other			
+4	162	0	2162364370	Sotsiaalne kaitse	Social care			
+4	163	119	5917859	Riigikogu liikmete palk	Salaries for MPs			
+4	164	162	273008600	"Peretoetused, sh vanemahüvitis"	Family benefits			
+4	165	162	27000000	Toimetulekutoetused	Social benefits			
+4	166	162	65405976	Puuetega inimeste toetused	Benefits for the disabled			
+4	167	162	1358590404	Pensionid	Pensionid			
+4	168	162	269659390	Muu	Other			
+4	169	149	6921696	Ravikindlustamata isikute vältimatu abi kulud	Emergency services for uninsured			
+4	170	149	26101517	Kiirabiteenus 	Medical emergency service			
+4	171	119	167035132	Eraldised Euroopa Liidule	EU payments			
+4	172	119	130918241	Regionaalareng	Regional development			
+4	173	129	49179643	Pääste	Emergency services			
+4	174	125	49551658	Kaitseotstarbeline erivarustus ja materjalid	Defence equipment and materials			
+0	0	0	7321459412	TULUD 2013				
+5	49	0	1558000000	Käibemaks	Value added tax	"Iga kord, kui sa ostad mingit kaupa või teenust, lisab kauba müüja selle hinnale 20%, mis tasutakse järgmise kuu 20. kuupäevaks Maksu- ja Tolliametile ning kantakse sealt riigieelarve tuludesse."		
+5	50	0	522100000	Tulumaks	Income tax	"Seda maksu tasub juriidiline isik või füüsilisest isikust tööandja, kui ta teeb tuluülekande füüsilisele isikule."		
+5	56	50	291000000	Füüsilise isiku tulumaks	Personal income tax	"Sinu töötasust arvestatakse maha 144€ maksuvaba tulu ning järelejäänud summalt peab sinu tööandja kinni 21% tulumaksu, mis kantakse Maksu- ja Tolliameti kaudu riigieelarvesse. 11,4% kantakse üle sinu elukoha linnale või vallale, ülejäänu läheb riigieelarvesse."		
+5	57	50	231100000	Juriidilise isiku tulumaks	Corporate income tax	"Kui äriühing maksab oma kasumi välja füüsilisele isikule, peab ta tasuma sellelt 21% tulumaksu, kuid enne seda peab ta jagama väljamakstava summa 0,79-ga. See summa läheb riigieelarvesse."		
+5	51	0	2230800000	Sotsiaalkindlustusmaksud	Social tax	Siia alla kuulub sotsiaalmaks ja töötuskindlustusmaks.		
+5	58	51	1892000000	Sotsiaalmaks ilma kogumispensiooni (4%) osata	Social tax without pension tax (4%)	"Sinule arvestatud töötasule lisaks maksab tööandja 33%, millest rahastatakse pensione ja tervishoidu. 20% sellest läheb pensionikindlustuseks, mis makstakse põlvkondade vahelise solidaarsuse põhimõttel välja sinu esivanematele, kes on jõudnud pensioniikka. 13% kaetakse makstakse arstidel palgad, kompenseeritakse töötasu haigetele ja tasutakse osa kallite ja vajalike ravimite hinnast."		
+5	59	51	161000000	Töötuskindlustusmakse	Unemployment insurance			
+5	591	51	177800000	Kogumispensionimakse (2% töötasust)	Pension fund			
+5	52	0	830600000	Aktsiisid	Excise duties	"Need on maksud, mida rakendatakse mingile konkreetsele kaubagrupile. Tollimaksu tasutakse vaid Euroopa Liidu välisest riigist toodud kaupade eest ja see kantakse üle EL eelarvesse. Aktsiisi tasutakse kaubalt, sõltumata sellest, kas ta on toodud välisriigist või toodetud kohapeal ning see kantakse riigieelarvesse."		
+5	60	52	212050000	Alkoholiaktsiis	Alcohol excise duty	"Seda maksu tasutakse vedelikult, mis sisaldab alkoholi (piiritus, viin jms kange alkohol, vein, õlu, siider jms) ning maksuna tasutav summa sõltub sellest, kui palju selles on alkoholi."		
+5	61	52	160000000	Tubakaaktsiis	Excise duty on tobacco	"Seda maksu tasutakse tubakatoodete (sigaret, sigar, sigarillo, suitsetamis- ja närimistubakas) ostmisel. Sigareti pakendile on kirjutatud selle maksimaalne müügihind."		
+5	62	52	425000000	Kütuseaktsiis	Fuel excise duty	"Seda maksu tasutakse igasuguse kütuse ostmisel (bensiin, petrooleum, diiselkütus, kütteõlid ja vedelgaas, kivi- ja pruunsüsi, koks, põlevkivi, maagaas jms põlevained s.h biokütus). Autokütuse liitrilt tuleb tasuda 0,39- 0,42 senti aktsiisi. "		
+5	64	52	350000	Pakendiaktsiis	Excise duty on packaging	Seda maksu tuleb tasuda tarbimispakenditelt. Pakendi hind on tavaliselt märgitud kaubal.		
+5	63	52	33200000	Elektriaktsiis	Excise duty on electricity	"Seda maksu tasutakse, kui ostetakse elektrienergiat, maksumäär on 4,47€ megavatt-tunnilt elektrienergialt."		
+5	72	0	109300000	Muud maksud	Other taxes			
+5	65	72	33000000	Hasartmängumaks	Gambling tax	"Seda maksu tuleb tasuda hasartmängudeks kasutatavatelt masinatelt jm vahenditelt. Maksutulu kasutatakse Eesti kultuuri edendamiseks, mitmesuguste heategevusprojektide toetamiseks ning Olümpiamängude ettevalmistusprojektide finantseerimiseks."		
+5	66	72	33000000	Tollimaks	Customs duties			
+5	74	72	43300000	Saastetasud	Pollution payments			
+5	54	0	1430888601	Mittemaksutulud	Non-taxes	"Mittemaksulised tulud, mille hulgas ka saadud toetused, kaupade ja teenuste müük, finantstulud"		
+5	67	54	159119464	Kaupade ja teenuste müük	Sales of goods and services	"Siin kajastatakse tulud, mis laekuvad riigilõivu tasumisest, riigi majandustegevusest ning kaupade ja teenuste müügist. Sh ka CO2 kvootide müük."		
+5	68	54	960935297	Toetused	"Subsidies, inc CO2 quotas sales"	"Selles osas kajastatakse tulusid, mis riigile laekuvad riigiasutuste tegevusest, aga samuti EL eelarvest ja muudest välisallikatest (1013,5 milj eurot) ning muud toetused."		
+5	70	54	162033840	Tulud varadelt	Income on assets	"Siin kajastatakse tulusid, mis laekuvad, riigi omanduses olevate äriühingute kasumieraldistest ning varada välja rentimisest."		
+5	71	54	148800000	Muud tulud	Other income	"Selles osas kajastatakse riigieelarvesse laekuvad tulud, mis tasutakse trahvide ja saastetasudena."		
+5	75	0	639770811	Edasikantavad kulud	Transferrable expenses			
+0	0	0	7683758782	KULUD 2013				
+6	162	0	2482163392	Sotsiaalne kaitse	Social care			
+6	167	162	1452367278	Pensionid	Pensions			
+6	164	162	103718545	Peretoetused 	Family benefits			
+6	1641	162	170700000	Vanemahüvitis	Parental benefits			
+6	166	162	73822796	Puuetega inimeste toetused	Benefits for the disabled			
+6	165	162	23000000	Toimetulekutoetused	Social benefits			
+6	122	162	177800000	Maksed pensioni II sambasse	Contributions to state pension fund			
+6	1671	162	115900000	Töötukassa kulud	Unemployment insurance expenses			
+6	168	162	364854773	Muu	Other			
+6	135	0	906802824	Majandus	Economic affairs			
+6	140	135	164481902	Maanteeameti investeeringud	Roads			
+6	1351	135	206391165	Äriettevõtete finantseerimistehingud (sh Estonian Air)	Financing of businesses (incl Estonian Air)			
+6	141	135	292800000	"Põllumajandus, maaelu ja kalandus"	Agriculture and fishing			
+6	136	135	81852445	Ettevõtluse soodustamine	Support for SMEs			
+6	139	135	64312639	Ühistransport	Public transport			
+6	138	135	25455662	Infoühiskond	ICT in society			
+6	142	135	71509011	Muu	Other			
+6	149	0	948164977	Tervishoid	Health care			
+6	150	149	826886394	Haigekassa riikliku ravikindlustuse kulud	Health insurance expenditures			
+6	170	149	28735006	Kiirabiteenus 	Medical emergency service			
+6	151	149	92543577	Muu	Other			
+6	156	0	724482925	Haridus	Education			
+6	1591	156	118436711	Kõrgkoolide tegevustoetused	Higher education general support			
+6	1592	156	12422563	Kõrghariduse õppetoetused	Higher education teaching support			
+6	160	156	169070000	Teadus- ja arendustegevus	Research and development			
+6	158	156	54420420	Kutseõppe riiklik koolitustellimus	Vocational education			
+6	157	156	200939108	Hariduskulude toetus (õpetajate palgafond)	"General education, inc LGU"			
+6	161	156	169194123	Muu	Other			
+6	119	0	1403156533	Valitsussektori teenused	Government sector services			
+6	120	119	307357569	"Kohalikele omavalitsustele, sh tasandusfond"	"Local government units, inc leveling fund"			
+6	163	119	6116045	Riigikogu liikmete palk	Salaries for MPs			
+6	172	119	88815687	"Regionaalareng, sh regionaalarengu toetused"	Regional development			
+6	171	119	182000000	Eraldised Euroopa Liidule	EU payments			
+6	1191	119	89957775	Välistoetuse kaasrahastamine	Co-financing of external support			
+6	1192	119	7625960	Arengu- ja humanitaarabi	Development and humanitarian support			
+6	124	119	721283497	"Muu, sh valitsuse reservfond"	"Other, inc government reserves"			
+6	129	0	375934559	Avalik kord ja julgeolek	Public order and safety 			
+6	132	129	146500000	"Sisejulgeolek,  sh Politsei ja piirivalve"	Internal security incl Police and Rescue Services			
+6	173	129	49300000	Pääste	Emergency services			
+6	130	129	43100000	Kinnipidamiskohad	Penitentiaries			
+6	131	129	35300000	Kohtud	Court system			
+6	134	129	101734559	"Muu, sh investeeringud"	"Muu, sh investeeringud"			
+6	125	0	337086470	Riigikaitse	Defence			
+6	126	125	80763639	Kaitseväe personalikulud	Defence force personnel			
+6	174	125	100673122	Kaitseotstarbeline erivarustus ja materjalid	Defence equipment and materials			
+6	128	125	155649709	Muu	Other			
+6	143	0	317890048	Keskkonnakaitse	Environmental protection 			
+6	144	143	137615827	"Struktuuritoetused, sh KOV veemajandus"	"Structural support, inc LGU water"			
+6	1231	143	69300000	Toetused CO2 müügitulu arvelt	Support from CO2 sale incomes			
+6	147	143	110974221	Muu	Other			
+6	152	0	178077054	"Kultuur, sport"	Culture and sports			
+6	1531	152	60280203	Kaunid kunstid	Arts			
+6	1532	152	49731167	Kultuuripärand	Cultural heritage			
+6	154	152	13563045	Sport	Sport			
+6	1533	152	24112081	Ringhääling	Public media			
+6	1534	152	3044150	Lõimumine	Integration			
+6	155	152	27346408	Muu	Other			
+6	148	0	10000000	Elamu ja kommunaalmajandus	Housing and community amenities 			
+0	0	0	6952668452	TULUD 2013 (Versioon 2)				
+7	1000	0	3848064452	Maksutulud	Tax incomes			
+7	1100	1000	1013000000	Füüsilise isiku tulumaks	Personal income tax			
+7	1200	1000	231100000	Juriidilise isiku tulumaks	Corporate income tax			
+7	1300	1000	55000000	Maamaks	Land tax			
+7	1400	1000	1558000000	Käibemaks	Value added tax			
+7	1500	1000	830554000	Aktsiisid	Excise duties			
+7	1600	1000	102950452	Muud kaudsed maksud	Other indirect taxes			
+7	1700	1000	57460000	Keskkonnatasud	Environment taxes			
+7	2000	0	2254700000	Sotsiaalkindlustusmaksed	Social taxes			
+7	2100	2000	1915900000	Sotsiaalmaks 	Social tax			
+7	2200	2000	161000000	Töötuskindlustusmakse	Unemployment tax			
+7	2300	2000	177800000	Pensionikindlustus (II sammas)	Pension fund (II column)			
+7	3000	0	610900000	Riigi majandustulud	Income from economic activities			
+7	4000	0	239004000	"Investeeringutoetused, s.h välisabi"	Investment support (incl external aid)			
+0	0	0	7152068000	KULUD 2013 (Versioon 2)				
+8	10000	0	434608649	Valitsussektori teenused	Government sector services			
+8	20000	0	361360000	Riigikaitse (välis)	Defence			
+8	30000	0	208612151	Sisekaitse 	Internal security			
+8	40000	0	643220800	"Majandus, s.h kommunaalmajandus"	Economics			
+8	50000	0	191227805	Keskkonnakaitse	Environment			
+8	60000	0	1164751178	Haridus	Education			
+8	70000	0	417224303	Kultuur	Culture			
+8	80000	0	712758184	Tervishoid	Health			
+8	90000	0	2658504930	Sotsiaalkaitse	Social security			
+8	100000	0	182000000	EL ülekanded	EU payments			
+8	110000	0	177800000	Pensionimaksed	Pension payments			
+0	0	0	459376479	TALLINN 2013 TULUD				
+20	1000	0	272945729	Maksutulud	Tax income			
+20	1100	1000	238195000	 Füüsilise isiku tulumaks	Personal income tax			
+20	1200	1000	27278729	 Maamaks	Land tax			
+20	1300	1000	2872000	 Kohalikud maksud	Local taxes			
+20	1400	1000	4600000	 Parkimistasu	Parking			
+20	1500	0	69809138	Tulud kaupade ja teenuste müügist	Sales income			
+20	1600	0	72691233	Tegevuskulude toetused	Operations support funds			
+20	1700	0	1913300	Muud tegevustulud	Other operational income			
+20	1800	1700	600600	Loodusvaradest	Natural resources			
+20	1900	1700	1312700	Muu	Other			
+20	2000	0	8995435	Laenude suurendamine	Loans			
+20	2100	0	33021644	Eelmise aasta jääk	Last year's balance			
+0	0	0	479223961	TALLINN 2013 KULUD				
+21	3000	0	42269800	Üldised valitsussektori teenused	General government services			
+21	3100	3000	29784258	Valitsemiskulud	Government services			
+21	3200	3000	3730306	Reservfond	Reserve fund			
+21	3300	3000	8755236	Valitsussektori võla teenindamine	Government debt servicing			
+21	3400	0	3632570	Avalik kord ja julgeolek	Public order and safety 			
+21	3500	0	124150537	Majandus	Economy			
+21	3600	3500	1207860	"Ettevõtluse arengu toetamine, stardiabi"	"Business development support, start help"			
+21	3700	3500	57127560	Tänavate korrashoid	Streets			
+21	3800	3500	56411628	Ühistranspordi korraldus	Public transport			
+21	3900	3500	9403489	Muu majandus	Other economy			
+21	4000	0	13882120	Keskkonnakaitse	Environment			
+21	4100	4000	4616167	Jäätmekäitlus (prügivedu)	Garbage disposal			
+21	4200	4000	4774474	Heitveekäitlus	Wastewater			
+21	4300	4000	4491479	Keskkonnakaitse	Other environment			
+21	4400	0	42457671	Elamu- ja kommunaalmajandus	Housing and community amenities 			
+21	4500	4400	16448336	Elamumajandus kokku	Housing			
+21	4600	4400	12901091	Veevarustus	Waterworks			
+21	4700	4400	6833815	Tänavavalgustus	Street lighting			
+21	4800	4400	6274429	Kommunaalmajandus kokku	Communal amenities			
+21	4900	0	7638879	Tervishoid	Medicine			
+21	5000	4900	4214497	Ambulatoorsed teenused (kiirabi)	Ambulance			
+21	5100	4900	1991882	Haiglateenused	Hospital services			
+21	5200	4900	417500	Avalikud tervishoiuteenused	Public health services			
+21	5300	4900	1015000	Muu tervishoid kokku	Other			
+21	5400	0	50654489	"Vabaaeg, kultuur ja religioon"	"Free time, culture and religion"			
+21	5500	5400	14620710	Sporditegevus 	Sports			
+21	5600	5400	7453064	Laste ja noorte tegevus kokku	Youth activities			
+21	5700	5400	12923653	Kultuur kokku	Culture			
+21	5800	5400	7070129	Botaanika- ja loomaaed kokku	Botanical garden and zoo			
+21	5900	5400	1470343	Seltsitegevus kokku	Communities			
+21	6000	5400	2910000	Ringhäälingu- ja kirjastamisteenused	Public media			
+21	6100	5400	4206590	Muu kulud	Other			
+21	6200	0	153744698	Haridus	Education			
+21	6300	6200	62120321	Lasteaiad kokku	Kindergardens			
+21	6400	6200	4690623	Põhikoolid	Primary schools			
+21	6500	6200	53957621	Gümnaasiumid	Gymnasiums			
+21	6600	6200	2437544	Täiskasvanute gümnaasiumid	Grown-up gymnasiums			
+21	6700	6200	914079	Kutse- ja kõrgkoolid	Professional and higher education			
+21	6800	6200	2288596	Hälviklaste koolid	Special schools			
+21	6900	6200	909684	Muud hariduse abiteenused	Misc education services			
+21	7000	6200	26426230	"Muu haridus, sh. hariduse haldus"	"Other, incl management"			
+21	7100	0	40793197	Sotsiaalne kaitse	Social security			
+21	7200	7100	5261476	Puuetega inimeste kulud kokku	Disabled people			
+21	7300	7100	14758973	Eakate sotsiaalhoole kokku	Elderly			
+21	7400	7100	5285823	Laste ja noorte sotsiaalhoolekanne	Youth			
+21	7500	7100	4139316	Muu perekondade sotsiaalkaitse	Families			
+21	7600	7100	1743845	Töötute sotsiaalne kaitse	Unemployed			
+21	7700	7100	4474512	Riiklik toimetulekutoetus	National support			
+21	7800	7100	2119105	Muu sotsiaalsete riskirühmade kaitse	Other social risk groups			
+21	7900	7100	3010147	"Muu sotsiaalne kaitse, sh. sotsiaalse kaitse haldus"	"Other social, incl. management"			
+0	0	0	8017881262	TULUD 2014				
+30	8000	0	1672900000	Käibemaks	Value added tax			
+30	8100	0	657000000	Tulumaks	Income tax			
+30	8200	8100	331100000	Juriidilise isiku tulumaks	Corporate income tax			
+30	8300	8100	325900000	Füüsilise isiku tulumaks	Personal income tax			
+30	8400	0	2245739523	Sotsiaalkindlustusmaksed	Social taxes			
+30	8500	8400	1930234260	Sotsiaalmaks	Social tax			
+30	8600	8400	177705263	Töötuskindlustusmakse	Unemployment insurance tax			
+30	8700	8400	137800000	Kogumispensionimakse (2% töötasust)	Pension fund			
+30	8800	0	836600000	Aktsiisid	Excise duties			
+30	8900	8800	225000000	Alkoholiaktsiis	Alcohol excise duty			
+30	9000	8800	175400000	Tubakaaktsiis	Tobacco excise duty			
+30	9100	8800	402000000	Kütuseaktsiis	Fuel excise duty			
+30	9200	8800	34200000	Elektriaktsiis	Electricity excise duty			
+30	9300	0	54900000	Muud maksud	Other taxes			
+30	9400	9300	22000000	Hasartmängumaks	Gambling tax			
+30	9500	9300	28700000	Tollimaks	Customs duties			
+30	9600	9300	4200000	Raskeveokimaks	Heavy vehicle tax			
+30	9700	0	1393041739	Riigi majandustulud	Income from economic activities			
+30	9800	9700	135386035	Kaupade ja teenuste müük	Sale of goods and services			
+30	9900	9700	902852318	Saadud toetused	Subsidies			
+30	10000	9700	157508863	Muud tulud	Other income			
+30	10100	9700	197294523	Finantstulud (intressid ja dividendid)	Financial operations (interest and dividends)			
+30	10200	0	1157700000	Edasiantavad tulud	Transferrable incomes			
+0	0	0	8057114973	KULUD 2014				
+31	10300	0	2664816757	Sotsiaalne kaitse	Social benefits			
+31	10400	10300	1487367105	Pensionid	Pensions			
+31	10500	10300	103676196	Peretoetused	Family benefits			
+31	10600	10300	171384617	Vanemahüvitis	Parental benefits			
+31	10700	10300	61769314	Puuetega inimeste toetused	Benefits for the disabled			
+31	10800	10300	23000000	Toimetulekutoetused	Social benefits			
+31	10900	10300	245100000	Maksed pensioni II sambasse	Contributions to state pension fund			
+31	11000	10300	146585325	Töötukassa kulud	Unemployment insurance expenses			
+31	11100	10300	425934200	Muu	Other			
+31	11200	0	977006603	Majandus	Economic affairs			
+31	11300	11200	111791405	Maanteeameti investeeringud	Roads			
+31	11400	11200	28012500	Kohalike teede hoid	Local road maintenance			
+31	11500	11200	284932586	Põllumajandusministeeriumi sihtotstarbelised toetused	Ministry of agriculture targeted support			
+31	11600	11200	173209653	Majandus-ja kommunikatsiooniministeeriumi sihtotstarbelised toetused	Ministry of economics and communication targeted support			
+31	11700	11200	26151162	Ühistranspordi toetused	Public transport support			
+31	11800	11200	352909297	Muu	Other			
+31	11900	0	1016923620	Tervishoid	Health care			
+31	12000	11900	897393767	Eesti Haigekassa riikliku ravikindlustuse kulud	Health insurance expenditures			
+31	12100	11900	31122876	Kiirabiteenuse ostmise kulud	Medical emergency service			
+31	12200	11900	88406977	Muu	Other			
+31	12300	0	759828995	Haridus	Education			
+31	12400	12300	134899520	Kõrgkoolide tegevustoetused	Higher education general support			
+31	12500	12300	15591935	Kõrghariduse õppetoetused	Higher education teaching support			
+31	12600	12300	149800000	Teadus- ja arendustegevus	Research and development			
+31	12700	12300	52743454	Kutseõppe riiklik koolitustellimus	Vocational education			
+31	12800	12300	205889801	Hariduskulude toetus (õpetajate palgafond)	General education			
+31	12900	12300	200904285	Muu	Other			
+31	13000	0	1365746262	Valitsussektori teenused	Government sector services			
+31	13100	13000	311378159	"Kohalikele omavalitsustele, sh tasandus-ja toetusfond"	"Local government units, inc leveling fund"			
+31	13200	13000	6150811	Riigikogu liikmete palk	Salaries for MPs			
+31	13300	13000	74392610	"Regionaalareng, sh regionaalarengu toetused"	Regional development			
+31	13400	13000	73841924	Välistoetuse kaasrahastamine	Co-financing of external support			
+31	13500	13000	284932586	Euroopa Liidu makse ja muud liikmemaksud 	EU payments and other member payments			
+31	13600	13000	9819701	Arengu-ja humanitaarabi	Development and humanitarian support			
+31	13700	13000	605230471	Muu	Other			
+31	13800	0	404317476	Avalik kord ja julgeolek	Public order and safety 			
+31	13900	13800	136082360	Politsei ja piirivalve	Police and border guards			
+31	14000	13800	43565982	Pääste	Emergency services			
+31	14100	13800	34005419	Kinnipidamiskohad	Penitentiaries			
+31	14200	13800	28211842	I ja II astme kohtud	I and II level courts			
+31	14300	13800	162451873	"Muu, sh investeeringud"	"Other, incl. investments"			
+31	14400	0	358136412	Riigikaitse	Defence			
+31	14500	14400	134139529	Kaitseväe tööjõukulud	Defence force personnel			
+31	14600	14400	111510120	Kaitseotstarbeline erivarustus ja materjalid 	Defence equipment and materials			
+31	14700	14400	112486763	Muu	Other			
+31	14800	0	320013901	Keskkonnakaitse	Environmental protection 			
+31	14900	14800	151917052	Sihtotstarbelised toetused	Targeted support			
+31	15000	14800	65850000	Toetused CO2 müügitulu arvelt	Support from CO2 sale incomes			
+31	15100	14800	102246849	Muu	Other			
+31	15200	0	190324947	"Kultuur, sport"	Culture and sports			
+31	15300	15200	75751223	Kaunid kunstid	Arts			
+31	15400	15200	62494759	Kultuuripärand	Cultural heritage			
+31	15500	15200	17044025	Sport	Sports			
+31	15600	15200	30868623	Ringhääling	Public media			
+31	15700	15200	4166317	Lõimumine	Integration			
+0	0	0	461334933	2014 Tallinna eelarve tulud kokku				
+32	15800	0	308273853	Riiklikud maksud	Riiklikud maksud			
+32	15900	15800	280373853	Füüsilise isiku tulumaks	Füüsilise isiku tulumaks			
+32	16000	15800	27900000	Maamaks	Maamaks			
+32	16100	0	9080000	Kohalikud maksud	Kohalikud maksud			
+32	16200	16100	2700000	Reklaamimaks	Reklaamimaks			
+32	16300	16100	700000	Teede ja tänavate sulgemise maks	Teede ja tänavate sulgemise maks			
+32	16400	16100	5680000	Parkimistasu	Parkimistasu			
+32	16500	0	581520	Lõivud	Lõivud			
+32	16600	0	55377390	Kaupade ja teenuste müük	Kaupade ja teenuste müük			
+32	16700	16600	42883202	Tulud majandustegevusest	Tulud majandustegevusest			
+32	16800	16600	6791391	Üür ja rent	Üür ja rent			
+32	16900	16600	2648351	Õiguste müük	Õiguste müük			
+32	17000	16600	3054446	Muude toodete ja teenuste müük	Muude toodete ja teenuste müük			
+32	17100	0	1105000	Muud tulud	Muud tulud			
+32	17200	17100	835000	Trahvid	Trahvid			
+32	17300	17100	270000	Muud tulud	Muud tulud			
+32	17400	0	150000	Finantstulu investeerimisest	Finantstulu investeerimisest			
+32	17500	0	1777000	Tulu vara müügist	Tulu vara müügist			
+32	17600	0	327150	Tulud muult varalt	Tulud muult varalt			
+32	17700	17600	260000	Loodusvarade kasutusõigus	Loodusvarade kasutusõigus			
+32	17800	17600	67150	Võlalt arvestatud intressikulu	Võlalt arvestatud intressikulu			
+32	17900	0	5680000	Dividendid	Dividendid			
+32	18000	0	78983020	Toetused	Toetused			
+32	18100	18000	77000000	Riigilt jm institutsioonidelt	Riigilt jm institutsioonidelt			
+32	18200	18000	1983020	Välisrahastus	Välisrahastus			
+32	18300	18000	0	Välisprojektide kaasfinantseerimine	Välisprojektide kaasfinantseerimine			
+0	0	0	433880340	2014 Tallinna eelarve kulud kokku				
+33	18400	0	83500000	Linna üldkulud	Linna üldkulud			
+33	18500	18400	5000000	Võlgade teenindamine	Võlgade teenindamine			
+33	18600	18400	4400000	Reservfond	Reservfond			
+33	18700	18400	74100000	Sihtotstarbelised kulud RE vahenditest	Sihtotstarbelised kulud RE vahenditest			
+33	18800	0	23839894	Valitsemine	Valitsemine			
+33	18900	18800	1924486	Linnavolikogu kantselei	Linnavolikogu kantselei			
+33	19000	18800	20898877	Linnakantselei	Linnakantselei			
+33	19100	18800	674939	Linnaarhiiv	Linnaarhiiv			
+33	19200	18800	341592	Perekonnaseisuamet	Perekonnaseisuamet			
+33	19300	0	107052689	Haridusamet	Haridusamet			
+33	19400	19300	59597964	Lastehoid ja alusharidus	Lastehoid ja alusharidus			
+33	19500	19300	35978960	Põhi- ja üldkeskharidus	Põhi- ja üldkeskharidus			
+33	19600	19300	407000	Kutseharidus	Kutseharidus			
+33	19700	19300	5665200	Huviharidus	Huviharidus			
+33	19800	19300	462240	Hariduse tugiteenused	Hariduse tugiteenused			
+33	19900	19300	2967846	Ameti tegevuskulud	Ameti tegevuskulud			
+33	20000	19300	1973479	Muud hariduskulud	Muud hariduskulud			
+33	20100	0	15599277	Kultuuriväärtuste Amet	Kultuuriväärtuste Amet			
+33	20200	20100	2374190	Raamatukogud	Raamatukogud			
+33	20300	20100	801354	Kultuuritegevus	Kultuuritegevus			
+33	20400	20100	2121230	Muuseumid	Muuseumid			
+33	20500	20100	3647842	Loomaaed	Loomaaed			
+33	20600	20100	1434820	Linnateater	Linnateater			
+33	20700	20100	798140	Filharmoonia	Filharmoonia			
+33	20800	20100	302114	Rahvaülikool	Rahvaülikool			
+33	20900	20100	766742	Ameti tegevuskulud	Ameti tegevuskulud			
+33	21000	20100	1333190	Linna kultuuriüritused	Linna kultuuriüritused			
+33	21100	20100	636125	Kultuuriprojektide toetamine	Kultuuriprojektide toetamine			
+33	21200	20100	1010000	SA Tallinna Kultuurikatel	SA Tallinna Kultuurikatel			
+33	21300	20100	373530	Muud kultuurikulud	Muud kultuurikulud			
+33	21400	0	10972097	Spordi- ja Noorsooamet	Spordi- ja Noorsooamet			
+33	21500	21400	8257942	Sport ja vaba aeg	Sport ja vaba aeg			
+33	21600	21400	706920	Noorsootöö	Noorsootöö			
+33	21700	21400	466845	Ameti tegevuskulud	Ameti tegevuskulud			
+33	21800	21400	832400	Spordiprojektide toetused	Spordiprojektide toetused			
+33	21900	21400	543990	Noosootööprogrammid ja -projektid	Noosootööprogrammid ja -projektid			
+33	22000	21400	164000	Muud kulud	Muud kulud			
+33	22100	0	26194011	Sotsiaal- ja Tervishoiuamet	Sotsiaal- ja Tervishoiuamet			
+33	22200	22100	838092	Ameti tegevuskulud	Ameti tegevuskulud			
+33	22300	22100	3529495	Puuetega isikute hoolekanne	Puuetega isikute hoolekanne			
+33	22400	22100	4314950	Eakate hoolekanne	Eakate hoolekanne			
+33	22500	22100	2912660	Laste hoolekanne	Laste hoolekanne			
+33	22600	22100	1191100	Kriisirühmade hoolekanne	Kriisirühmade hoolekanne			
+33	22700	22100	1200000	Puuetega isikute hooldajatoetus	Puuetega isikute hooldajatoetus			
+33	22800	22100	1231100	Sotsiaaltöö keskus	Sotsiaaltöö keskus			
+33	22900	22100	10895325	Sotsiaaltoetused	Sotsiaaltoetused			
+33	23000	22100	81289	Muud kulud	Muud kulud			
+33	23100	0	16107018	Linnavaraamet	Linnavaraamet			
+33	23200	23100	1771388	Ameti tegevuskulud	Ameti tegevuskulud			
+33	23300	23100	13152330	Elamumajandus	Elamumajandus			
+33	23400	23100	595000	Sotsiaalmajad	Sotsiaalmajad			
+33	23500	23100	434500	Linnahalli AS	Linnahalli AS			
+33	23600	23100	153800	Kinnisvararegister	Kinnisvararegister			
+33	23700	0	8456092	Ettevõtlusamet	Ettevõtlusamet			
+33	23800	23700	1790516	Ameti tegevuskulud	Ameti tegevuskulud			
+33	23900	23700	871830	Ettevõtluse arendamine	Ettevõtluse arendamine			
+33	24000	23700	771000	Turismi arendamine	Turismi arendamine			
+33	24100	23700	812600	Tallinna linnaturud	Tallinna linnaturud			
+33	24200	23700	190000	Lauluväljak	Lauluväljak			
+33	24300	23700	3180000	Tallinna Televisioon	Tallinna Televisioon			
+33	24400	23700	340000	Sotsiaalsed töökohad	Sotsiaalsed töökohad			
+33	24500	23700	447380	Ettevõtlusinkubaator	Ettevõtlusinkubaator			
+33	24600	23700	52766	Muud kulud	Muud kulud			
+33	24700	0	63119806	Transpordiamet	Transpordiamet			
+33	24800	24700	1307200	Ameti tegevuskulud	Ameti tegevuskulud			
+33	24900	24700	56578865	Ühistransport	Ühistransport			
+33	25000	24700	1232590	Liikluskorraldus	Liikluskorraldus			
+33	25100	24700	1270500	Parkimiskorraldus	Parkimiskorraldus			
+33	25200	24700	2730651	Muud kulud	Muud kulud			
+33	25300	0	40709091	Kommunaalamet	Kommunaalamet			
+33	25400	25300	1310783	Ameti tegevuskulud	Ameti tegevuskulud			
+33	25500	25300	19200000	Teetööd	Teetööd			
+33	25600	25300	7758000	Tänavavalgustus	Tänavavalgustus			
+33	25700	25300	900790	Haljastus (Kadrioru park)	Haljastus (Kadrioru park)			
+33	25800	25300	9745565	Vesi ja kanalisatsioon	Vesi ja kanalisatsioon			
+33	25900	25300	790000	Korteriühistutele	Korteriühistutele			
+33	26000	25300	1003953	Muud kulud	Muud kulud			
+33	26100	0	6046391	Keskkonnaamet	Keskkonnaamet			
+33	26200	26100	1068409	Ameti tegevuskulud	Ameti tegevuskulud			
+33	26300	26100	100000	Haljastus	Haljastus			
+33	26400	26100	1104450	Kalmistud	Kalmistud			
+33	26500	26100	420000	Loomakaitse	Loomakaitse			
+33	26600	26100	1380525	Jäätmemajandus	Jäätmemajandus			
+33	26700	26100	913887	Botaanikaaed	Botaanikaaed			
+33	26800	26100	260000	Mängu- ja jalutusväljakud	Mängu- ja jalutusväljakud			
+33	26900	26100	799120	Muud kulud	Muud kulud			
+33	27000	0	3046498	Linnaplaneerimise Amet	Linnaplaneerimise Amet			
+33	27100	27000	2473698	Ameti tegevuskulud	Ameti tegevuskulud			
+33	27200	27000	467400	Geomaatika	Geomaatika			
+33	27300	27000	105400	Muud kulud	Muud kulud			
+33	27400	0	2670563	Munitsipaalpolitsei Amet	Munitsipaalpolitsei Amet			
+33	27500	0	22613381	Linnaosade valitsused	Linnaosade valitsused			
+33	27600	27500	1783572	Haabersti Linnaosa Valitsus	Haabersti Linnaosa Valitsus			
+33	27700	27500	4551783	Kesklinna Valitsus	Kesklinna Valitsus			
+33	27800	27500	1679444	Kristiine Linnaosa Valitsus	Kristiine Linnaosa Valitsus			
+33	27900	27500	4586466	Lasnamäe Linnaosa Valitsus	Lasnamäe Linnaosa Valitsus			
+33	28000	27500	2489448	Mustamäe Linnaosa Valitsus	Mustamäe Linnaosa Valitsus			
+33	28100	27500	2247373	Nõmme Linnaosa Valitsus	Nõmme Linnaosa Valitsus			
+33	28200	27500	1496179	Pirita Linnaosa Valitsus	Pirita Linnaosa Valitsus			
+33	28300	27500	3779116	Põhja-Tallinna Linnaosa Valitsus	Põhja-Tallinna Linnaosa Valitsus			
+33	28400	0	3953532	Muu	Muu			

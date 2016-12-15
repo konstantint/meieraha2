@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Graublau;
+    src: url(../fonts/GraublauWeb.otf) format("opentype");
+}
+
+.bubble {
+    font-family: Graublau, sans-serif;
+    cursor: pointer;
+}
+
+.bubble .center {
+    fill: none;
+    stroke: none;
+}
+
+.bubble .inner {
+    fill: none;
+}
+
+.bubble .inner.expandable {
+    stroke: white;
+    stroke-width: 1px;
+    stroke-dasharray: 3,3;
+}
+
+.bubble text.amount {
+    fill: white;
+    font-size: 1.85em;
+    text-anchor: middle;
+    /* dominant-baseline: central;  -- unsupported in IE, we use y="0.4em" instead */
+}
+
+.bubble text.label {
+    fill: black;
+    font-size: 1em;
+    text-anchor: middle;
+    /* dominant-baseline: text-before-edge;  -- unsupported in IE, we solve it in JS */
+}
+
+.bubble .handle {
+    fill: none;
+}
+
+.bubble.expanded {
+    opacity: 0.1;
+    cursor: default;
+}
+
+.bubble.expanded .outer {
+    fill: grey !important;
+}
+
+.bubble.expanded .handle {
+    fill: black;
+    cursor: pointer;
+}
+
+.link {
+    stroke: grey;
+}
