@@ -57,3 +57,12 @@ Deployment
 -----------
 
 There is a starter Fabric configuration file `fabfile.py` which may help automate deployment. It needs tayloring before used, though. Sample deployment configuration is in `deploy/aws`.
+
+Copyright
+-----------
+ 
+ - The code was developed by Konstantin Tretyakov and Tanel Kärp with the help from many other people on the Meieraha team (see http://meieraha.ee)
+ - The code is licensed as MIT, feel free to contribute.
+ - The repository includes full distributions of some external libraries (to simplify deployment). Those are subject to their own licences. All are open source, though.
+
+ 
