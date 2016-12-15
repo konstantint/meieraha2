@@ -49,6 +49,10 @@ should have the ``compass`` tool installed and accessible in your path. The serv
     $ meieraha2-manage loaddata
     $ meieraha2-manage runserver
 
+If you edit CSS or Javascript files, you will need to rebuild the assets bundle via
+
+    $ meieraha2-manage assets build
+
 Deployment
 -----------
 

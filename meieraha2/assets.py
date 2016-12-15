@@ -43,7 +43,7 @@ js_head = Bundle(
 js_main = Bundle(
     "libs/nouislider/distribute/jquery.nouislider.min.js",
     "libs/d3/d3.min.js",
-    "js/Localization.js"
+    "js/Localization.js",
     "js/BubbleUtil.js",
     "js/BubbleLayout.js",
     "js/BubbleLayout.js",
