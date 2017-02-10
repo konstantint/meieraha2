@@ -23,6 +23,9 @@ DEFAULT_LANG = 'en'
 BASE_URL = 'http://meieraha.ee'
 SHARE_MESSAGE = lazy_gettext('Our Money')  # This is used in the "Share" buttons as the accompanying message
 
+# If you want to mount the application to a non-root URL, enable this setting (and set BASE_URL appropriately as well!)
+#APPLICATION_ROOT="/meieraha"
+
 # DISQUS integration
 DISQUS_SHORTNAME = 'meieraha'
 

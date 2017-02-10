@@ -36,6 +36,14 @@ def init_app(app):
     app.register_blueprint(views.auth.blueprint)    # Flask-Login
     app.register_blueprint(views.main.blueprint)    # Main app views
 
+
+    if app.config.get('APPLICATION_ROOT', None) is not None and app.config['APPLICATION_ROOT'] != '/':
+        # Mount application at an URL which is different from '/'
+        from werkzeug.wsgi import DispatcherMiddleware
+        app.wsgi_app = DispatcherMiddleware(Flask('dummy_app'), {
+            app.config['APPLICATION_ROOT']: app.wsgi_app,
+        })
+        
     # Auto-fix proxy IP address and host
     # Disable if you are not planning to serve this app behind a nginx or apache proxy
     from werkzeug.contrib.fixers import ProxyFix

@@ -17,29 +17,29 @@ BackendConnector = {
     },
 
     loadVisualization: function(id, savedStateId) {
-        var url = "/visualization/" + id;
+        var url = this.baseUrl + "/visualization/" + id;
         if (savedStateId !== undefined && savedStateId != "") url = url + "?s=" + savedStateId;
         return $.ajax(url)
                 .fail(this.defaultErrorHandler);
     },
 
     saveVisualization: function(id, state) {
-        return $.post("/save_visualization/" + id, JSON.stringify(state))
+        return $.post(this.baseUrl + "/save_visualization/" + id, JSON.stringify(state))
                 .fail(this.defaultErrorHandler);
     },
 
     reportComment: function(threadId) {
-        return $.ajax("/report_comment/" + threadId)
+        return $.ajax(this.baseUrl + "/report_comment/" + threadId)
                 .fail(this.defaultErrorHandler);
     },
 
     discussionList: function(visId) {
-        return $.ajax("/discussion_list/" + visId)
+        return $.ajax(this.baseUrl + "/discussion_list/" + visId)
                 .fail(this.defaultErrorHandler);
     },
 
     setLang: function(lang) {
-        window.location.href = "/set_lang/" + lang + "?prev=" + encodeURIComponent(window.location.href);
+        window.location.href = this.baseUrl + "/set_lang/" + lang + "?prev=" + encodeURIComponent(window.location.href);
     }
 }
 
