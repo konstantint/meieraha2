@@ -7,7 +7,7 @@ Usage:
 
 2. Initialize the database:
 
-  docker run -v $PWD:/meieraha meieraha /initdb.sh
+  docker run -v $PWD:/meieraha meieraha bash /initdb.sh
 
 3. Run the server at port 5000
 
