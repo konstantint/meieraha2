@@ -1,7 +1,8 @@
-Version 2.2.1
+Version 2.2.2
 -------------
 
     - Enable the APPLICATION_ROOT setting for mounting app at arbitrary URLs.
+    - Support for a newer version of Flask-Login.
 
 Version 2.2
 -----------

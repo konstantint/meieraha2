@@ -40,7 +40,7 @@ class AdminAccessControlMixin(object):
     '''
 
     def is_accessible(self):
-        return current_user.is_authenticated() and current_user.login == 'admin'
+        return current_user.is_authenticated and current_user.login == 'admin'
 
 
 class LoginFriendlyAdminIndexView(AdminIndexView):
@@ -48,7 +48,7 @@ class LoginFriendlyAdminIndexView(AdminIndexView):
     
     @expose('/')
     def index(self):
-        if not current_user.is_authenticated():
+        if not current_user.is_authenticated:
             return redirect(url_for('auth.login', next=url_for('admin.index')))
         return super(LoginFriendlyAdminIndexView, self).index()
 

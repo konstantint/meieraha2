@@ -42,7 +42,7 @@ setup(
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     include_package_data=True,
     install_requires=[
-      "Flask", "Flask-SQLAlchemy", "Flask-Login", "Flask-WTF", "Flask-Babel", "Flask-Admin",
+      "Flask", "Flask-SQLAlchemy", "Flask-Login >= 0.3", "Flask-WTF", "Flask-Babel", "Flask-Admin",
       "Flask-Script", "Flask-Assets", "jsmin", "cssmin"
     ],
     tests_require=["pytest", "webtest"],
