@@ -13,3 +13,4 @@
 *.pyc
 Thumbs.db
 /_backups
+/venv

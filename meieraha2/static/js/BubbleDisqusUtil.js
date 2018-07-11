@@ -233,6 +233,8 @@ function BubbleDisqusUtil(disqusShortname, backendConnector, dataMapper) {
                     for (var j = 0; j < discussions.length; j++) {
                         var newItem = template.clone();
                         var dataItem = _dataItemRegistry[discussions[j][0]];
+						if (!dataItem) continue; // This may happen if you delete bubbles which had discussions assigned.
+						// We won't include these discussions to the list (arguable decision, I know, but sounds OK to me at this moment). 
                         newItem.find(".titlelink").html(_dataMapper.computeLabel(dataItem));
                         newItem.find(".titlelink").data("item", dataItem);
                         newItem.find(".count").html(discussions[j][1]);
